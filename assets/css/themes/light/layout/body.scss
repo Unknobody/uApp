@@ -1,0 +1,70 @@
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: 'Lato', sans-serif;
+    padding: 0 0 75px 0;
+}
+
+
+
+h1, h2, h3 {
+    font-family: 'Wendy One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $link;
+    transition: .3s all ease;
+}
+
+a:hover {
+    color: $link-hover;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 25px 0;
+    color: $dark-color;
+    background: $primary;
+}
+
+.main-section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        .avatar {
+            text-align: center;
+            position: relative;
+            img {
+                border-radius: 50%;
+                width: 75%;
+                height: auto;
+                border: 5px solid $secondary;
+                box-shadow: 0 0 0 4px $primary,
+                    0 -5px 0 4px $dark-color;
+                margin-top: -15px;
+            }
+            .avatar-edit-btn {
+                position: absolute;
+                bottom: 0;
+                right: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+
+                i {
+                    color: $primary;
+
+                }
+            }
+        }
+    }
+
+

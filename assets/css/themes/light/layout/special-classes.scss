@@ -1,0 +1,176 @@
+.text-primary {
+    color: $primary !important;
+}
+.text-secondary {
+    color: $secondary !important;
+}
+
+.bg-primary {
+	background: $primary !important;
+}
+
+.bg-secondary {
+	background: $secondary !important;
+}
+
+
+.special-letter {
+    color: $secondary;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-primary {
+    background: $primary-btn-background;
+    border-color: $primary-btn-border;
+    color: $primary-btn-text;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: $primary-btn-border;
+    border-color: $primary-btn-border;
+}
+
+.btn-secondary {
+    background: $secondary-btn-background;
+    border-color: $secondary-btn-border;
+    color: $secondary-btn-text;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background: $secondary-btn-border;
+    border-color: $secondary-btn-border;
+}
+
+
+.rounded-image img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+// Page Apps
+.personnal-apps-icons {
+	height: 60vh;
+	width: 100%;
+	display: flex;
+}
+
+.personnal-apps-icons ul {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+.personnal-apps-icons ul li {
+	margin: 0;
+}
+
+/*Change icons size here*/
+.social-icons .fa {
+	font-size: 1.8em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+}
+
+
+.social-icons .fa:hover, .social-icons .fa:active,
+.social-icons .fa:hover, .social-icons .fa:focus {
+	color: #FFF;
+	-webkit-box-shadow: 1px 1px 3px #333;
+	-moz-box-shadow: 1px 1px 3px #333;
+	box-shadow: 1px 1px 3px #333; 
+	transform: scale(.8);
+}
+.social-icons .fa-tree{background-color:#3ef15c;}
+.social-icons .fa-hand-scissors{background-color:#cd3ef1; transform: rotate(25deg);}
+.social-icons .fa-cart-plus{background-color:#4a3ef1;}
+.social-icons .fa-face-grin-squint-tears{background-color:#f13e3e;}
+
+.avatar-say {
+	background: $light-color;
+	color: $dark-color;
+	border-radius: 2rem;
+	padding: .5rem 1rem 1rem;
+	border: 4px solid $secondary;
+	box-shadow: 0 0 0 4px $primary;
+}
+
+.temp-message-container {
+    background: $link-hover;
+    color: $dark-color;
+}
+
+
+
+//APps
+h2.app-title {
+	color: $primary;
+	text-align: center;
+}
+
+// PAge avatars
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-container .avatar-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 5px;
+	transition: all .4s ease-in-out;
+}
+
+.image-container .avatar-image:hover,
+.image-container .avatar-image:focus {
+	transform: scale(1.1);
+}
+
+#home-footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: fixed;
+	bottom: 65px;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	background: $primary;
+		div {
+			margin: 0px 7px;
+		}
+		i {
+			color: $dark-color;
+		}
+}
+

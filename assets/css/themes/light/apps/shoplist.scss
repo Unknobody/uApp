@@ -1,0 +1,140 @@
+
+.app-app-shoplist-page form#shop-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  bottom: 70px;
+  left: 0;
+  background: white;
+}
+
+.app-app-shoplist-page form#shop-form input {
+  flex: 3;
+  text-align: center;
+}
+
+.app-app-shoplist-page form#shop-form input::placeholder {
+  text-align: right;
+  opacity: .7;
+}
+
+
+.app-app-shoplist-page form#shop-form input,
+.app-app-shoplist-page form#shop-form button {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+}
+
+.app-app-shoplist-page form#shop-form button {
+  color: $primary;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.app-app-shoplist-page form#shop-form button:hover,
+.app-app-shoplist-page form#shop-form button:focus {
+  background: $primary;
+  color: white;
+}
+
+.app-app-shoplist-page form#shop-form input:focus {
+  border: none;
+  outline: none;
+}
+
+.app-app-shoplist-page .todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-app-shoplist-page .todo-list {
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.app-app-shoplist-page .todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.app-app-shoplist-page .todo li {
+  color: black;
+  flex: 1;
+}
+
+.app-app-shoplist-page .trash-btn,
+.app-app-shoplist-page .complete-btn {
+  background: $primary;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.app-app-shoplist-page .complete-btn {
+  background: rgba(66, 236, 66, 0.856);
+}
+
+.app-app-shoplist-page .todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.app-app-shoplist-page .fa-trash,
+.app-app-shoplist-page .fa-check {
+  pointer-events: none;
+}
+
+.app-app-shoplist-page .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.app-app-shoplist-page .fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.app-app-shoplist-page select {
+  appearance: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+  color: $primary;
+  cursor: pointer;
+  padding: 1rem;
+
+}
+
+
+.app-app-shoplist-page .select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-app-shoplist-page .select i {
+  color: $primary;
+  font-size: 3rem;
+  position: absolute;
+  right:15px;
+  top: 15px;
+  pointer-events: none;
+}
+
+

@@ -1,0 +1,289 @@
+.app-app-ppc-page {
+  .container {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    
+    header {
+      max-width: 95%;
+      border: 3px solid $secondary;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin: 50px 0;
+    }
+    
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
+      line-height: 0.8;
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+    }
+    
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    h4 {
+      color: $secondary;
+      margin: 0;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+    
+    .score-container {
+      background: $primary;
+      border: 3px solid $primary; 
+      padding: 5px 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    
+    .score-container p {
+      color: $secondary;
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
+    }
+    
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 350px;
+      max-height: 60vh;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    
+    main::after {
+      background-image: url("/assets/apps/ppc/images/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      height: 70%;
+      width: 70%;
+      z-index: -1;
+    }
+    
+    .btn-rules {
+      border: 2px solid $primary;
+      border-radius: 10px;
+      background-color: transparent;
+      color: $primary;
+      font-family: inherit;
+      font-size: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 25px;
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+    }
+    
+    .btn-circle {
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: inset 0 -5px rgba(0, 0, 0, 0.15);
+      margin: 0 25px;
+      width: 150px;
+      height: 150px;
+    }
+    
+    .button:focus {
+      outline: none;
+    }
+    
+    .btn-circle:focus-visible {
+      transform: scale(0.8);
+    }
+    
+    .btn-circle .wrapper {
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-flex;
+      box-shadow: inset 0 5px rgba(0, 0, 0, 0.15);
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+      width: 120px;
+    }
+    
+    .btn-paper {
+      background: linear-gradient(
+        to bottom,
+        hsl(230, 89%, 62%),
+        hsl(230, 89%, 65%)
+      );
+    }
+    
+    .btn-scissors {
+      background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    }
+    
+    .btn-rock {
+      background: linear-gradient(
+        to bottom,
+        hsl(349, 71%, 52%),
+        hsl(349, 70%, 56%)
+      );
+    }
+    
+    .btn {
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background-color: #fff;
+      color: hsl(229, 25%, 31%);
+      font-size: 20px;
+      font-family: inherit;
+      padding: 10px 25px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    
+    .selection {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 1000px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    .selection .btn-circle {
+      margin: 50px 100px;
+      transform: scale(1.2);
+    }
+    
+    .big-text {
+      font-size: 3rem;
+      margin: 0 0 20px;
+      line-height: 0.8;
+      text-transform: uppercase;
+    }
+    
+    .rules-modal {
+      background-color: #1d1d1d;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+    }
+    
+    .rules-modal h2 {
+      margin: 50px 0 100px;
+    }
+    
+    .rules-modal button {
+      color: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      margin-top: 100px;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+    }
+    
+    
+    @media (max-width: 1000px) {
+      header {
+        margin: 20px auto;
+      }
+    
+      .btn-circle {
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: inset 0 -5px rgba(0, 0, 0, 0.15);
+        margin: 0 25px;
+        width: 100px;
+        height: 100px;
+      }
+    
+      .btn-circle .wrapper {
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-flex;
+        box-shadow: inset 0 5px rgba(0, 0, 0, 0.15);
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 70px;
+      }
+    
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+        max-height: 60vh;
+        margin: 0 auto;
+        position: relative;
+      }
+    
+      main::after {
+        background-image: url("/assets/apps/ppc/images/bg-triangle.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        position: absolute;
+        top: 22%;
+        left: 17%;
+        height: 60%;
+        width: 60%;
+        z-index: -1;
+      }
+    
+      .selection .btn-circle {
+        margin: 10px 5px;
+        transform: scale(0.8);
+      }
+      .go-down {
+        order: 1;
+      }
+    
+      .choix {
+        margin: 0px 20px;
+      }
+    
+      .score-container {
+          background: $primary;
+          color: $secondary;
+          padding: 5px 10px;
+          border: 3px solid $secondary;
+      }
+    
+      .score-container p {
+        font-size: 2.5rem;
+      }
+  }
+    
+}
